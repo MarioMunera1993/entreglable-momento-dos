@@ -2,17 +2,15 @@ import { Link } from "react-router-dom"
 
 export const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center border-b-4 pt-[clamp(1.5rem,3vw,2.5rem)] 
-  pb-[clamp(1.5rem,3vw,2.5rem)] 
-  px-[max(5%,calc((100%-1200px)/2))]">
+    <nav className="flex items-center justify-between bg-[#fffdf9] px-[max(5%,calc((100%-1200px)/2))] py-6 shadow-sm">
 
-        <Link to={"/"} className="text-2xl font-semibold tracking-widest uppercase" href="">Zenith Bonsai</Link>
+        <Link to={"/"} className="text-xl font-bold tracking-wider text-slate-800 uppercase">Zenith Bonsai</Link>
         <div className="flex gap-6 text-wrap">
-            <Link to={"/philosophy"} className="font-normal pb-1 border-b border-transparent hover:border-b-black text-1" href="">
+            <Link to={"/philosophy"} className="text-gray-700 hover:text-black transition-colors font-medium" href="">
             Filosofía
             </Link>
-            <Link to={"/gallery"} className="font-normal pb-1 border-b border-transparent hover:border-b-black text-1">Galería</Link>
-            <Link to={"/booking"} className="font-normal pb-1 border-b border-transparent hover:border-b-black text-1">Reservas</Link>
+            <Link to={"/gallery"} className="text-gray-700 hover:text-black transition-colors font-medium">Galería</Link>
+            <Link to={"/booking"} className="text-gray-700 hover:text-black transition-colors font-medium">Reservas</Link>
         </div>
     </nav>
   )
