@@ -13,7 +13,7 @@ const listBonsai = [
 
 export const Gallery = () => {
   return (
-    <div className="min-h-screen bg-[#f0ede8]">
+    <div className="min-h-screen bg-[#f7f6f2]">
       <Navbar />
       <main className="max-w-6xl mx-auto px-8 py-20">
         <div className="text-center mb-16">
