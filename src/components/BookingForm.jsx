@@ -44,6 +44,7 @@ export const BookingForm = () => {
               value={formData.nombre}
               onChange={handleChange}
               placeholder="Ej. Ana Silva"
+              required
               className="border border-[#e2dfd5] rounded-sm px-3 py-3 text-sm text-[#2d342d] bg-transparent placeholder:text-[#a8afa2] outline-none focus:border-[#5d7052] transition-colors duration-200"
             />
           </div>
@@ -59,6 +60,7 @@ export const BookingForm = () => {
               value={formData.correo}
               onChange={handleChange}
               placeholder="tu@email.com"
+              required
               className="border border-[#e2dfd5] rounded-sm px-3 py-3 text-sm text-[#2d342d] bg-transparent placeholder:text-[#a8afa2] outline-none focus:border-[#5d7052] transition-colors duration-200"
             />
           </div>
@@ -72,6 +74,7 @@ export const BookingForm = () => {
               name="nivel"
               value={formData.nivel}
               onChange={handleChange}
+              required
               className="border border-[#e2dfd5] rounded-sm px-3 py-3 text-sm text-[#2d342d] bg-transparent outline-none focus:border-[#5d7052] transition-colors duration-200 appearance-auto"
             >
               <option>Principiante (Nunca he tenido un Bonsái)</option>
@@ -91,6 +94,7 @@ export const BookingForm = () => {
               value={formData.mensaje}
               onChange={handleChange}
               placeholder="¿Qué te gustaría aprender?"
+              required
               rows={4}
               className="border border-[#e2dfd5] rounded-sm px-3 py-3 text-sm text-[#2d342d] bg-transparent placeholder:text-[#a8afa2] outline-none focus:border-[#5d7052] transition-colors duration-200 resize-y"
             />
